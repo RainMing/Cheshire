@@ -22,6 +22,7 @@
     
     NSLog(@"第一次提交");
     NSLog(@"第二次提交");
+    NSLog(@"再次提交");
     
     
     return YES;
