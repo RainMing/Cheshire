@@ -4,9 +4,10 @@
 //
 //  Created by lanouhn on 15/6/24.
 //  Copyright (c) 2015年 main.m. All rights reserved.
-//
+//**************** Xcode 版本6.1  模拟器 iPhone6 ****** iOS Deployment Target 8.1  **********
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,12 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
-    
-    
-    NSLog(@"第一次提交");
-    NSLog(@"第二次提交");
-    NSLog(@"再次提交");
+    ViewController *viewVC = [[ViewController alloc]init];
+    self.window.rootViewController = viewVC;
+    [viewVC release];
     
     
     return YES;
