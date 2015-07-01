@@ -26,6 +26,13 @@
     self.window.rootViewController = viewVC;
     [viewVC release];
     
+    //创建一个标签试图控制器
+    UITabBarController *tabarVCS = [[UITabBarController alloc]init];
+    
+    
+    
+    
+    
     
     return YES;
 }
