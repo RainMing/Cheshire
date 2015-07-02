@@ -19,6 +19,18 @@
     self.myTableView = [[RootTableView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.view = self.myTableView;
     [self.myTableView release];
+    
+    self.navigationItem.title = @"首页";
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor blueColor]];
+    //UIBarButtonSystemItemCompose UIBarButtonSystemItemReply  UIBarButtonSystemItemAction  UIBarButtonSystemItemOrganize UIBarButtonSystemItemBookmarks UIBarButtonSystemItemSearch UIBarButtonSystemItemStop UIBarButtonSystemItemCamera UIBarButtonSystemItemTrash    UIBarButtonSystemItemPlay UIBarButtonSystemItemPause UIBarButtonSystemItemRewind UIBarButtonSystemItemFastForward
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(leftItemAction:)];
+    
+    self.navigationItem.leftBarButtonItem = leftItem;
+}
+
+- (void)leftItemAction:(UIBarButtonItem *)left
+{
+    
 }
 
 - (void)viewDidLoad {
