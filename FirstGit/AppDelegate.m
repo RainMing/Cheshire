@@ -7,7 +7,7 @@
 //**************** Xcode 版本6.1  模拟器 iPhone6 ****** iOS Deployment Target 8.1  **********
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,17 +22,26 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    ViewController *viewVC = [[ViewController alloc]init];
-    self.window.rootViewController = viewVC;
-    [viewVC release];
+    RootViewController *rootVC = [[RootViewController alloc]init];
+    UINavigationController *rootNV = [[UINavigationController alloc]initWithRootViewController:rootVC];
+    rootNV.tabBarItem.title = @"首页";
+    rootNV.tabBarItem.image = [UIImage imageNamed:@"Home_page1.png"];
+    
+    //创建一个存放控制器的数组
+    NSArray *controllers = @[rootNV];
     
     //创建一个标签试图控制器
     UITabBarController *tabarVCS = [[UITabBarController alloc]init];
+    tabarVCS.viewControllers = controllers;
     
     
     
     
     
+    self.window.rootViewController = tabarVCS;
+    [rootVC release];
+    [rootNV release];
+    [tabarVCS release];
     
     return YES;
 }
