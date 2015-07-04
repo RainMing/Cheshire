@@ -25,10 +25,20 @@
     //UIBarButtonSystemItemCompose UIBarButtonSystemItemReply  UIBarButtonSystemItemAction  UIBarButtonSystemItemOrganize UIBarButtonSystemItemBookmarks UIBarButtonSystemItemSearch UIBarButtonSystemItemStop UIBarButtonSystemItemCamera UIBarButtonSystemItemTrash    UIBarButtonSystemItemPlay UIBarButtonSystemItemPause UIBarButtonSystemItemRewind UIBarButtonSystemItemFastForward
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(leftItemAction:)];
     
+    
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(rightItemAction:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
 }
 
 - (void)leftItemAction:(UIBarButtonItem *)left
+{
+    NSLog(@"left");
+}
+
+- (void)rightItemAction:(UIBarButtonItem *)right
 {
     
 }

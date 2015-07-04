@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34037BA41B47C3FD007DC433 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34037BA31B47C3FD007DC433 /* LeftViewController.m */; };
+		34037BA71B47C411007DC433 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34037BA61B47C411007DC433 /* RightViewController.m */; };
+		34037BAA1B47C43B007DC433 /* LeftTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34037BA91B47C43B007DC433 /* LeftTableView.m */; };
+		34037BAD1B47C452007DC433 /* RightTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34037BAC1B47C452007DC433 /* RightTableView.m */; };
 		349B93741B451861000BE085 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 349B93731B451861000BE085 /* RootViewController.m */; };
 		349B93761B451AEC000BE085 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349B93751B451AEC000BE085 /* Images.xcassets */; };
 		349B937F1B451DEC000BE085 /* RootTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 349B937E1B451DEC000BE085 /* RootTableView.m */; };
+		34CF39F71B4772F700B817F6 /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF39F41B4772F700B817F6 /* YRSideViewController.m */; };
+		34CF39F81B4772F700B817F6 /* YRSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CF39F61B4772F700B817F6 /* YRSideView.m */; };
 		34FBAAC01B3A901400223F4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBAABF1B3A901400223F4D /* main.m */; };
 		34FBAAC31B3A901400223F4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBAAC21B3A901400223F4D /* AppDelegate.m */; };
 		34FBAAC61B3A901400223F4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FBAAC51B3A901400223F4D /* ViewController.m */; };
@@ -29,12 +35,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34037BA21B47C3FD007DC433 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		34037BA31B47C3FD007DC433 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		34037BA51B47C411007DC433 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		34037BA61B47C411007DC433 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		34037BA81B47C43B007DC433 /* LeftTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableView.h; sourceTree = "<group>"; };
+		34037BA91B47C43B007DC433 /* LeftTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableView.m; sourceTree = "<group>"; };
+		34037BAB1B47C452007DC433 /* RightTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTableView.h; sourceTree = "<group>"; };
+		34037BAC1B47C452007DC433 /* RightTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTableView.m; sourceTree = "<group>"; };
 		349B93711B45178B000BE085 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		349B93721B451861000BE085 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		349B93731B451861000BE085 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		349B93751B451AEC000BE085 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		349B937D1B451DEC000BE085 /* RootTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableView.h; sourceTree = "<group>"; };
 		349B937E1B451DEC000BE085 /* RootTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableView.m; sourceTree = "<group>"; };
+		34CF39F31B4772F700B817F6 /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
+		34CF39F41B4772F700B817F6 /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
+		34CF39F51B4772F700B817F6 /* YRSideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideView.h; sourceTree = "<group>"; };
+		34CF39F61B4772F700B817F6 /* YRSideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideView.m; sourceTree = "<group>"; };
 		34FBAABA1B3A901400223F4D /* FirstGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FBAABE1B3A901400223F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FBAABF1B3A901400223F4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +92,10 @@
 				34FBAAC51B3A901400223F4D /* ViewController.m */,
 				349B93721B451861000BE085 /* RootViewController.h */,
 				349B93731B451861000BE085 /* RootViewController.m */,
+				34037BA21B47C3FD007DC433 /* LeftViewController.h */,
+				34037BA31B47C3FD007DC433 /* LeftViewController.m */,
+				34037BA51B47C411007DC433 /* RightViewController.h */,
+				34037BA61B47C411007DC433 /* RightViewController.m */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -83,8 +105,23 @@
 			children = (
 				349B937D1B451DEC000BE085 /* RootTableView.h */,
 				349B937E1B451DEC000BE085 /* RootTableView.m */,
+				34037BA81B47C43B007DC433 /* LeftTableView.h */,
+				34037BA91B47C43B007DC433 /* LeftTableView.m */,
+				34037BAB1B47C452007DC433 /* RightTableView.h */,
+				34037BAC1B47C452007DC433 /* RightTableView.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		34CF39F21B4772DA00B817F6 /* YRSideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				34CF39F31B4772F700B817F6 /* YRSideViewController.h */,
+				34CF39F41B4772F700B817F6 /* YRSideViewController.m */,
+				34CF39F51B4772F700B817F6 /* YRSideView.h */,
+				34CF39F61B4772F700B817F6 /* YRSideView.m */,
+			);
+			name = YRSideViewController;
 			sourceTree = "<group>";
 		};
 		34FBAAB11B3A901300223F4D = {
@@ -110,6 +147,7 @@
 			children = (
 				34FBAAC11B3A901400223F4D /* AppDelegate.h */,
 				34FBAAC21B3A901400223F4D /* AppDelegate.m */,
+				34CF39F21B4772DA00B817F6 /* YRSideViewController */,
 				349B93701B451753000BE085 /* viewcontroller */,
 				349B93791B451BD8000BE085 /* view */,
 				34FBAAC71B3A901400223F4D /* Main.storyboard */,
@@ -247,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CF39F81B4772F700B817F6 /* YRSideView.m in Sources */,
+				34037BA41B47C3FD007DC433 /* LeftViewController.m in Sources */,
 				34FBAAC61B3A901400223F4D /* ViewController.m in Sources */,
 				349B937F1B451DEC000BE085 /* RootTableView.m in Sources */,
+				34037BAD1B47C452007DC433 /* RightTableView.m in Sources */,
+				34037BAA1B47C43B007DC433 /* LeftTableView.m in Sources */,
+				34CF39F71B4772F700B817F6 /* YRSideViewController.m in Sources */,
+				34037BA71B47C411007DC433 /* RightViewController.m in Sources */,
 				34FBAAC31B3A901400223F4D /* AppDelegate.m in Sources */,
 				349B93741B451861000BE085 /* RootViewController.m in Sources */,
 				34FBAAC01B3A901400223F4D /* main.m in Sources */,

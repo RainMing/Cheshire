@@ -24,11 +24,19 @@
     
     RootViewController *rootVC = [[RootViewController alloc]init];
     UINavigationController *rootNV = [[UINavigationController alloc]initWithRootViewController:rootVC];
-    rootNV.tabBarItem.title = @"首页";
-    rootNV.tabBarItem.image = [UIImage imageNamed:@"Home_page1.png"];
+    _leftVC = [[LeftViewController alloc]init];
+    _rightVC = [[RightViewController alloc]init];
+    
+    _sideViewController = [[ YRSideViewController alloc]init];
+    _sideViewController.rootViewController = rootNV;
+    _sideViewController.leftViewController = _leftVC;
+    _sideViewController.rightViewController = _rightVC;
+    
+    _sideViewController.tabBarItem.title = @"首页";
+    _sideViewController.tabBarItem.image = [UIImage imageNamed:@"Home_page1.png"];
     
     //创建一个存放控制器的数组
-    NSArray *controllers = @[rootNV];
+    NSArray *controllers = @[_sideViewController];
     
     //创建一个标签试图控制器
     UITabBarController *tabarVCS = [[UITabBarController alloc]init];
@@ -44,6 +52,14 @@
     [tabarVCS release];
     
     return YES;
+}
+
+- (void)dealloc
+{
+    [_sideViewController release];
+    [_leftVC release];
+    [_rightVC release];
+    [super dealloc];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

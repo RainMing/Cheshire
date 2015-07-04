@@ -13,3 +13,9 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #endif
+#import "AppDelegate.h"
+#import "YRSideViewController.h"
+#define KINSTANCE_X 20//菜单栏距左边框的距离（以做菜单栏为基准）
+#define KINSTANCE_Y 40//菜单栏距上边框的距离
+#define THE_MENU_WIDTH [UIScreen mainScreen].bounds.size.width/5*3 //菜单栏的宽度
+#define THE_MENU_HEIGHT [UIScreen mainScreen].bounds.size.height/6*5
