@@ -33,7 +33,8 @@
     _sideViewController.rightViewController = _rightVC;
     
     _sideViewController.tabBarItem.title = @"首页";
-    _sideViewController.tabBarItem.image = [UIImage imageNamed:@"Home_page1.png"];
+    _sideViewController.tabBarItem.image = [[UIImage imageNamed:@"Home_page1.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    _sideViewController.tabBarItem.selectedImage = [[UIImage imageNamed:@"Home_page1.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     //创建一个存放控制器的数组
     NSArray *controllers = @[_sideViewController];
