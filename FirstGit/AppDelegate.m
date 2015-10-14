@@ -49,7 +49,6 @@
     [rootNV release];
     [tabarVCS release];
     
-    NSLog(@"再次回归");
     
     return YES;
 }
