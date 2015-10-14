@@ -44,13 +44,12 @@
     tabarVCS.viewControllers = controllers;
     
     
-    
-    
-    
     self.window.rootViewController = tabarVCS;
     [rootVC release];
     [rootNV release];
     [tabarVCS release];
+    
+    NSLog(@"再次回归");
     
     return YES;
 }
